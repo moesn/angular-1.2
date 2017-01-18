@@ -5,6 +5,11 @@
     "standard",
     "promise"
   ],
+  "globals": {
+    "$": true,
+    "angular": true,
+    "layui": true
+  },
   "rules": {
     "indent": [
       "error",
@@ -21,6 +26,8 @@
         "named": "never",
         "asyncArrow": "ignore"
       }
-    ]
+    ],
+    "no-path-concat": 0,
+    "eol-last": 0
   }
 }

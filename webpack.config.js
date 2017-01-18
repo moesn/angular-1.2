@@ -20,17 +20,18 @@ module.exports = function makeWebpackConfig() {
     };
 
     config.entry = {
-        app: './src/app/app.js'
+        app: './src/app/app.js',
+        vendor: './src/public/vendor.js'
     };
 
     config.output = {
-        path: 'dist',
-        publicPath: isProd ? '/' : 'http://localhost:8080/',
+        path: __dirname + 'dist',
+        publicPath: isProd ? '/' : 'http://127.0.0.1:8080/',
         filename: isProd ? '[name].[hash].js' : '[name].bundle.js',
         chunkFilename: isProd ? '[name].[hash].js' : '[name].bundle.js'
     };
 
-    config.devtool = isProd ? 'cheap-source-map' : 'cheap-eval-source-map';
+    config.devtool = isProd ? 'cheap-module-source-map' : 'cheap-module-eval-source-map';
 
     config.module = {
         rules: [
@@ -67,13 +68,10 @@ module.exports = function makeWebpackConfig() {
 
     config.plugins = [
         new HtmlWebpackPlugin({
-            template: './src/public/index.html'
+            template: './src/public/index.html',
+            chunks: ['vendor', 'app']
         }),
         new ExtractTextPlugin({filename: '[name].[hash].css', disable: !isProd}),
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
-        })
     ];
 
     if (isProd) {

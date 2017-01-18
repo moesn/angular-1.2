@@ -69,46 +69,5 @@ It will start a local server using `webpack-dev-server` which will watch, build 
 
 [MIT](./LICENSE)
 
-{
-  "name": "Angular-1.2",
-  "version": "1.0.0",
-  "description": "Support IE8",
-  "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
-    "server": "webpack-dev-server --history-api-fallback --inline --progress",
-    "start": "npm run server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow.git"
-  },
-  "author": "Jesus Rodriguez",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Foxandxss/angular-webpack-workflow/issues"
-  },
-  "homepage": "https://github.com/Foxandxss/angular-webpack-workflow",
-  "dependencies": {
-    "angular": "^1.2.32"
-  },
-  "devDependencies": {
-    "angular-mocks": "^1.5.0",
-    "autoprefixer": "^6.0.3",
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.23.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.9.0",
-    "html-webpack-plugin": "^2.7.1",
-    "istanbul-instrumenter-loader": "^1.0.0",
-    "jasmine-core": "^2.3.4",
-    "node-libs-browser": "^2.0.0",
-    "null-loader": "^0.1.1",
-    "phantomjs-prebuilt": "^2.1.4",
-    "postcss-loader": "^1.1.1",
-    "raw-loader": "^0.5.1",
-    "style-loader": "^0.13.0"
-  }
-}
+
+

@@ -1,0 +1,85 @@
+.topbar {
+    background-color: #393D49;
+    background-image: url('../../public/img/background.png');
+    background-size: 100% 100%;
+}
+
+.topbar .layui-nav {
+    padding: 0;
+    background: none;
+}
+
+.topbar .layui-nav-item {
+    line-height: 70px;
+}
+
+.topbar .layui-nav-bar {
+    background-color: #393D49;
+}
+
+.topbar .layui-this::after {
+    background-color: #1AA094;
+}
+
+.topbar-head {
+    width: 185px;
+    height: 70px;
+    position: relative;
+}
+
+.topbar-head .logo {
+    left: 10px;
+    top: 15px;
+    position: absolute;
+    display: block;
+}
+
+.topbar-product {
+    width: auto;
+    height: 70px;
+    position: absolute;
+    left: 245px;
+    top: 0;
+}
+
+.topbar-product .layui-this {
+    opacity: 0.5;
+    background: #2B2E37;
+}
+
+.topbar-info {
+    position: absolute;
+    width: auto;
+    height: 70px;
+    right: 0;
+    top: 0;
+}
+
+.topbar-info .layui-this a {
+    color: #c2c2c2;
+}
+
+.topbar-info .userimg {
+    width: 45px;
+    border-radius: 50%;
+    border: 4px solid #44576b;
+    margin-top: -6px;
+}
+
+.sidebar-fold {
+    position: absolute;
+    cursor: pointer;
+    z-index: 19871207;
+    left: 200px;
+    color: white;
+    text-align: center;
+    width: 30px;
+    background-color: #1AA094;
+    line-height: 30px;
+    top: 27%;
+}
+
+.sidebar-fold:hover {
+    background-color: #5FB878;
+}
+

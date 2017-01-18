@@ -1,0 +1,23 @@
+{
+  "name": "Angular-1.2",
+  "description": "Support IE8",
+  "main": "",
+  "authors": [
+    "Moesn"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/moesn/angular-1.2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.2",
+    "angular-ui-router": "^0.3.2",
+    "lodash-compat": "^3.10.2",
+    "moment": "^2.17.1"
+  }
+}

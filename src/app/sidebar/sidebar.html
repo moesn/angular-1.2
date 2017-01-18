@@ -1,0 +1,23 @@
+<div class="layui-side sidebar">
+    <ul class="layui-nav layui-nav-tree layui-nav-side">
+        <li class="layui-nav-item" ng-repeat="nav in navs">
+            <a ng-href='{{nav.href}}'>
+                <i class="iconfont icon-{{nav.icon}}"></i>
+                <span ng-bind="nav.name"></span>
+            </a>
+            <dl class="layui-nav-child" ng-if="nav.children">
+                <dd ng-repeat="child in nav.children">
+                    <a ng-href='{{child.href}}'>
+                        <i class="iconfont icon-{{child.icon}}"></i>
+                        <span ng-bind="child.name"></span>
+                    </a>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <style>
+        .sidebar ul {
+            top: 70px !important;
+        }
+    </style>
+</div>

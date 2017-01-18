@@ -1,2 +1,6 @@
 .idea
+*.log
+test.*
+
+bower_components
 node_modules
