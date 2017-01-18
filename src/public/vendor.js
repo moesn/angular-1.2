@@ -4,9 +4,6 @@ require('./layui/css/layui.css');
 require('./font/iconfont.css');
 require('./style.css');
 
-layui.use(['element'], function () {
-});
-
 require('../../bower_components/angular/angular');
 require('../../bower_components/angular-ui-router/release/angular-ui-router');
 require('../../bower_components/lodash-compat/lodash');

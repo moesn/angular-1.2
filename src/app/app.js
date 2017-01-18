@@ -6,8 +6,15 @@ require('./app.css');
 angular.module('app', ['ui.router', 'profile']).run(
     function () {
     }
-).controller('AppCtrl', ['$scope', '$http',
-    function ($scope, $http) {
+).controller('AppCtrl', ['$scope', '$http', '$timeout',
+    function ($scope, $http, $timeout) {
+        window.$Root = $scope.$root;
+        window.onload = function () {
+            layui.use('element');
+            $timeout(function () {
+                $scope.$root.onload = true;
+            });
+        };
     }
 ]).directive('app', function () {
     return {

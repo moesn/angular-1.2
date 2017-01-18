@@ -8,7 +8,8 @@
   "globals": {
     "$": true,
     "angular": true,
-    "layui": true
+    "layui": true,
+    "layer": true
   },
   "rules": {
     "indent": [
