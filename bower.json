@@ -1,12 +1,12 @@
 {
-  "name": "Angular-1.2",
-  "description": "Support IE8",
-  "main": "",
+  "name": "admin",
+  "description": "isdp admin",
+  "main": "app.js",
   "authors": [
-    "Moesn"
+    "zhaohuaming"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/moesn/angular-1.2",
+  "license": "ISC",
+  "homepage": "zhaohuaming.cn",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,10 +14,10 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
+  "dependencies": {
     "angular": "1.2",
-    "angular-ui-router": "^0.3.2",
+    "moment": "^2.18.1",
     "lodash-compat": "^3.10.2",
-    "moment": "^2.17.1"
+    "angular-ui-router": "^0.4.2"
   }
 }
