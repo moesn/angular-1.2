@@ -4,7 +4,8 @@
   "description": "isdp admin",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon www"
+    "start": "webpack --bail -w",
+    "server": "nodemon www"
   },
   "repository": {
     "type": "git",
@@ -21,9 +22,11 @@
     "pug-cli": "^1.0.0-alpha6"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^7.1.0",
     "eslint-plugin-promise": "^3.5.0",
-    "eslint-plugin-standard": "^2.1.1"
+    "eslint-plugin-standard": "^2.1.1",
+    "webpack": "^2.3.3"
   }
 }
