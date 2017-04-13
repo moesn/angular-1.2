@@ -3,5 +3,6 @@
 test.*
 
 bower_components
+dist
 node_modules
 bower.json
