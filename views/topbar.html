@@ -1,0 +1,10 @@
+<ul class="layui-nav layui-nav-tree">
+    <li class="layui-nav-item" ng-repeat="item in navItems">
+        <a href="javascript:" ng-bind="item.name"></a>
+        <dl class="layui-nav-child">
+            <dd ng-repeat="child in item.children" repeat-finish="init()">
+                <a ui-sref="mk({id:child.id})" ng-bind="child.name"></a>
+            </dd>
+        </dl>
+    </li>
+</ul>

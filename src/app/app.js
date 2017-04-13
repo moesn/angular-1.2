@@ -3,28 +3,21 @@
  */
 'use strict';
 
-angular.module('admin', []).run(
+var admin = angular.module('admin', ['ui.router']).run(
     function () {
     }
 ).controller('AdminCtrl', ['$scope', '$http', '$timeout',
     function ($scope, $http, $timeout) {
     }
-]).directive('main', function () {
-    return {
-        restrict: 'E',
-        templateUrl: 'main.html',
-        replace: true,
-        controller: ['$scope', function ($scope) {
-            layui.form().render();
-        }]
-    };
-});
+]);
 
-// require('./config/apis');
-// require('./config/routes');
-//
-// require('./profile/profile');
-// require('./sidebar/sidebar');
-// require('./topbar/topbar');
+require('./config/apis')(admin);
+require('./config/routes')(admin);
+
+require('./common/topbar')(admin);
+require('./common/sidebar')(admin);
+require('./common/repeat.finish')(admin);
+
+require('./module/module')(admin);
 
 angular.bootstrap(document, ['admin']);

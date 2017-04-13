@@ -1,5 +1,7 @@
 'use strict';
 
-angular.module('app').constant('API', {
-    CONFIG: 'api.work.config'
-});
+module.exports = function (module) {
+    module.constant('API', {
+        CONFIG: 'api.work.config'
+    });
+};
